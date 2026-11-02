@@ -1,6 +1,7 @@
 #pragma once
+#include "Entity.h"
 
-class Swimmer
+class Swimmer : public Entity
 {
 public:
 	Swimmer()

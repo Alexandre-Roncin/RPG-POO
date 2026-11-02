@@ -1,5 +1,5 @@
 #pragma once
-static const Vector2 g_directions[4];
+
 class Entity
 {
 public:
@@ -13,4 +13,10 @@ public:
 
 private:
 
+};
+
+class Vector2
+{
+public:
+	static const Vector2 g_directions[4];
 };

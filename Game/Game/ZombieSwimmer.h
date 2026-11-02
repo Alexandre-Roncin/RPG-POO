@@ -1,4 +1,6 @@
 #pragma once
+#include "Swimmer.h"
+#include "Zombie.h"
 
 class ZombieSwimmer
 {
