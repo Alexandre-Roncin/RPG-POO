@@ -8,6 +8,8 @@ public:
 	{
 	}
 
+	int getLife();
+	void setLife();
 	bool isAlive();
 	void move();
 	virtual void onCollision();
