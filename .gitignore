@@ -390,3 +390,6 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/Game/.vs
+/Game/.vs/Game
+/Game/.vs/Game/v17
