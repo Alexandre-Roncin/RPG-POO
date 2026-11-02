@@ -26,7 +26,10 @@ public:
 	~Entity()
 	{
 	}
-private:
+
+protected:
 	int health;
 	int maxHealth;
+
+private:
 };
