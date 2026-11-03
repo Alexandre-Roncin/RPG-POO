@@ -18,6 +18,10 @@ public:
 	{
 	}
 
+	int readPlayerInputs();
+	Vector2 getDirection(int);
+	virtual void onUpdate();
+
 	~Player()
 	{
 	}
