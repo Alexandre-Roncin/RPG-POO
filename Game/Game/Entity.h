@@ -1,3 +1,4 @@
+// Alexandre RONCIN
 #pragma once
 #include "Utilities.h"
 
