@@ -2,8 +2,6 @@
 #pragma once
 #include "Utilities.h"
 
-<<<<<<< Updated upstream
-=======
 enum E_PlayerAction
 {
 	None = 0,
@@ -14,20 +12,12 @@ enum E_PlayerAction
 	Attack
 };
 
->>>>>>> Stashed changes
 static const Vector2 g_directions[4] = {
 	{0,-1},  // Up
 	{0, 1},  // Down
 	{-1, 0}, // Left
 	{1, 0}   // Right
 };
-<<<<<<< Updated upstream
-=======
-
-
-
-
->>>>>>> Stashed changes
 
 class Entity
 {
@@ -36,14 +26,13 @@ public:
 	{
 	}
 
-<<<<<<< Updated upstream
 	int getLife();
 	void setLife();
 	bool isAlive();
 	void move();
 	virtual void onCollision();
 	void applyDamage();
-=======
+
 	int GetHealth();
 	void SetHealth();
 
@@ -54,7 +43,6 @@ public:
 	void applyDamage();
 	bool isAlive();
 	void move();
->>>>>>> Stashed changes
 	virtual void onUpdate();
 
 	~Entity()
@@ -66,10 +54,7 @@ protected:
 	int maxHealth;
 
 private:
-<<<<<<< Updated upstream
-=======
 	int health = 1;
 	int maxHealth = 10;
 	char icon = 'O';
->>>>>>> Stashed changes
 };
