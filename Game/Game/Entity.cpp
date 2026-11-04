@@ -5,6 +5,7 @@ class Entity
 public:
 	Entity()
 	{
+
 	}
 
 	int getHealth() const 
@@ -91,8 +92,18 @@ public:
 	bool characterMoveCollision(
 		Entity& character, Vector2& newPos,
 		Entity& others);
-	virtual void onCollision();
 
+	virtual void onCollision(Entity& other)
+	{
+		if (!isAlive() || !other.isAlive())
+			return;
+
+		int damageToThis = other.applyDamage(other.damage);
+		int damageToOther = damage;
+
+		applyDamage(damageToThis);
+		other.applyDamage(damageToOther);
+	}
 	virtual void onUpdate();
 
 	~Entity()
@@ -105,5 +116,4 @@ protected:
 	int maxHealth;
 	int damage;
 	char icon;
-
 };
