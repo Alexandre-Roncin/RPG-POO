@@ -1,6 +1,8 @@
 // Alexandre RONCIN
 #pragma once
+
 #include "Utilities.h"
+#include <vector>
 
 enum E_PlayerAction
 {
@@ -26,23 +28,25 @@ public:
 	{
 	}
 
-	int getLife();
-	void setLife();
-	bool isAlive();
-	void move();
+	int getHealth() const;
+	int getMaxHealth() const;
+	int getDamage() const;
+	char getIcon() const;
+	Vector2 getPos() const;
+
+	void setHealth(int newHealth);
+	void setDamage(int newDamage);
+	void setIcon(char newIcon);
+	void setPos(const Vector2& newPos);
+
+	bool isAlive() const;
+	void applyDamage(int damage);
+
+	bool characterMoveCollision(
+		Entity& character, Vector2& newPos,
+		Entity& others);
 	virtual void onCollision();
-	void applyDamage();
 
-	int GetHealth();
-	void SetHealth();
-
-	char GetIcon();
-	void SetIcon();
-
-	virtual void onCollision();
-	void applyDamage();
-	bool isAlive();
-	void move();
 	virtual void onUpdate();
 
 	~Entity()
@@ -50,11 +54,10 @@ public:
 	}
 
 protected:
+	Vector2 pos;
 	int health;
 	int maxHealth;
+	int damage;
+	char icon;
 
-private:
-	int health = 1;
-	int maxHealth = 10;
-	char icon = 'O';
 };
