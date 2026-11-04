@@ -1,9 +1,11 @@
 #pragma once
 #include "Utilities.h"
 
+#include <string>
 #include <vector>
 #include <fstream>
 #include <filesystem>
+#include <iostream>
 
 
 enum E_CellType
