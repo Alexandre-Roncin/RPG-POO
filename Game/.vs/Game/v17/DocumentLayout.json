@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\jerfi\\OneDrive\\Documents\\GitHub\\RPG-POO\\Game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E2BAA751-2724-4874-8FDD-7DC417CA67D2}|Game\\Game.vcxproj|C:\\Users\\jerfi\\OneDrive\\Documents\\GitHub\\RPG-POO\\Game\\Game\\Map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E2BAA751-2724-4874-8FDD-7DC417CA67D2}|Game\\Game.vcxproj|solutionrelative:Game\\Map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E2BAA751-2724-4874-8FDD-7DC417CA67D2}|Game\\Game.vcxproj|C:\\Users\\jerfi\\OneDrive\\Documents\\GitHub\\RPG-POO\\Game\\Game\\Map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E2BAA751-2724-4874-8FDD-7DC417CA67D2}|Game\\Game.vcxproj|solutionrelative:Game\\Map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2BAA751-2724-4874-8FDD-7DC417CA67D2}|Game\\Game.vcxproj|C:\\Users\\jerfi\\OneDrive\\Documents\\GitHub\\RPG-POO\\Game\\Game\\Map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E2BAA751-2724-4874-8FDD-7DC417CA67D2}|Game\\Game.vcxproj|solutionrelative:Game\\Map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E2BAA751-2724-4874-8FDD-7DC417CA67D2}|Game\\Game.vcxproj|C:\\Users\\jerfi\\OneDrive\\Documents\\GitHub\\RPG-POO\\Game\\Game\\Game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -26,17 +26,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Map.h",
               "DocumentMoniker": "C:\\Users\\jerfi\\OneDrive\\Documents\\GitHub\\RPG-POO\\Game\\Game\\Map.h",
               "RelativeDocumentMoniker": "Game\\Map.h",
               "ToolTip": "C:\\Users\\jerfi\\OneDrive\\Documents\\GitHub\\RPG-POO\\Game\\Game\\Map.h*",
               "RelativeToolTip": "Game\\Map.h*",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAuwBMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACcAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-10-30T14:13:13.709Z",
               "EditorCaption": ""
@@ -56,13 +56,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Map.cpp",
               "DocumentMoniker": "C:\\Users\\jerfi\\OneDrive\\Documents\\GitHub\\RPG-POO\\Game\\Game\\Map.cpp",
               "RelativeDocumentMoniker": "Game\\Map.cpp",
-              "ToolTip": "C:\\Users\\jerfi\\OneDrive\\Documents\\GitHub\\RPG-POO\\Game\\Game\\Map.cpp*",
-              "RelativeToolTip": "Game\\Map.cpp*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAAAnAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\jerfi\\OneDrive\\Documents\\GitHub\\RPG-POO\\Game\\Game\\Map.cpp",
+              "RelativeToolTip": "Game\\Map.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-10-30T14:03:29.112Z",
               "EditorCaption": ""

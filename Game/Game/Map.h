@@ -1,5 +1,6 @@
 #pragma once
 #include "Utilities.h"
+#include "Entity.h"
 
 #include <string>
 #include <vector>
@@ -39,8 +40,7 @@ public:
 		
 	}
 
-	int oneDToTwoD(Vector2 pos, int width);
-	void LoadLevel(int map_size_x, int map_size_y, Hero H, const std::vector<Monstre>&Monstres, int* p);
+	
 
 	~Map()
 	{
@@ -50,4 +50,8 @@ private:
 
 };
 
-
+int oneDToTwoD(Vector2 pos, int width);
+void RenderTerrain(int cellType);
+bool RenderEntity(int x, int y, std::vector<Entity>& entities);
+void RenderCell(int x, int y, int cellType, std::vector<Entity>& entities);
+void LoadLevel(int map_size_x, int map_size_y, std::vector<Entity>& entities, int* p);
