@@ -36,7 +36,11 @@ class Map
 public:
 	Map()
 	{
+		
 	}
+
+	int oneDToTwoD(Vector2 pos, int width);
+	void LoadLevel(int map_size_x, int map_size_y, Hero H, const std::vector<Monstre>&Monstres, int* p);
 
 	~Map()
 	{
@@ -47,4 +51,3 @@ private:
 };
 
 
-int oneDToTwoD(Vector2 pos, int width);

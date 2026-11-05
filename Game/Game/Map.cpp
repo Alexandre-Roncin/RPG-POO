@@ -4,57 +4,63 @@
 const int width = 20;
 const int height = 10;
 
+// Converts a 1 dimensional array into a more understandable 2D vector
 int oneDToTwoD(Vector2 pos, int width)
 {
 	return pos.y * width + pos.x;
 }
 
-void LoadLevel(int map_size_x, int map_size_y, Hero H, const std::vector<Monstre>& Monstres, int* p)
+// Fairly self-explanatory, it renders the terrain's ground and various obstacles as well as the exit
+void RenderTerrain(int cellType)
 {
+	switch (cellType) {
+	case Ground:
+		std::cout << '.';
+		break;
+	case Mountain:
+		std::cout << 'M';
+		break;
+	case Water:
+		std::cout << '~';
+		break;
+	case Exit:
+		std::cout << 'E';
+		break;
+	}
+}
 
-	for (int j = 0; j < map_size_y; j++) {
-		for (int i = 0; i < map_size_x; i++) {
-			int index = i + (j * map_size_x);
-
-			// Comparaison de la case en cours de generation et de celle du Hero/Monstre
-			if (i == H.pos_x && j == H.pos_y) {
-				std::cout << H.nom; // %c pour print un char
-			}
-			else {
-				bool monstre_affiche = false;
-
-				for (const Monstre& monstre : Monstres) {
-					if (i == monstre.pos_x && j == monstre.pos_y) {
-						std::cout << "%c " << monstre.nom;
-						monstre_affiche = true;
-						break;
-					}
-				}
-
-				if (!monstre_affiche) {
-					// Generer la case normalement
-
-					switch (p[index]) {
-					case Ground:
-						std::cout << '.';
-						break;
-					case Mountain:
-						std::cout << 'M';
-						break;
-					case Water:
-						std::cout << '~';
-						break;
-					case Exit:
-						std::cout << 'E';
-						break;
-					}
-				}
-			}
+// Again, self-explanatory, renders the entities' icons according to their positions
+bool RenderEntity(int x, int y, std::vector<Entity>& entities)
+{
+	for (Entity& entity : entities) {
+		if (x == entity.getPos().x && y == entity.getPos().y) {
+			std::cout << entity.getIcon();
+			return true;
 		}
-		
+	}
+	return false;
+}
+
+// renders the cells of the map, naturally excluding the entities
+void RenderCell(int x, int y, int cellType, std::vector<Entity>& entities)
+{
+	if (!RenderEntity(x, y, entities)) {
+		RenderTerrain(cellType);
+	}
+}
+
+// loads the map with thehelp of the previous function
+void LoadLevel(int map_size_x, int map_size_y, std::vector<Entity>& entities, int* p)
+{
+	for (int y = 0; y < map_size_y; y++) {
+		for (int x = 0; x < map_size_x; x++) {
+			int index = x + (y * map_size_x);
+			RenderCell(x, y, p[index], entities);
+		}
+		std::cout << '\n';
 	}
 
-	// Display de la vie
-	std::cout << H.health << H.max_health;
-
+	if (!entities.empty()) {
+		std::cout << "Health : " << entities[0].getHealth() << " / " << entities[0].getMaxHealth() << '\n';		// the number 0 is chosen to get the health of the first entity, therefore the player's
+	}
 }
