@@ -1,16 +1,15 @@
 #include "Map.h"
 
 
-std::string content = buffer.str();
-int width = content.find_first_of('\n');
-int height = content.size() / width;
+const int width = 20;
+const int height = 10;
 
 int oneDToTwoD(Vector2 pos, int width)
 {
 	return pos.y * width + pos.x;
 }
 
-void afficher_map(int map_size_x, int map_size_y, Hero H, const std::vector<Monstre>& Monstres, int* p)
+void LoadLevel(int map_size_x, int map_size_y, Hero H, const std::vector<Monstre>& Monstres, int* p)
 {
 
 	for (int j = 0; j < map_size_y; j++) {
@@ -54,6 +53,7 @@ void afficher_map(int map_size_x, int map_size_y, Hero H, const std::vector<Mons
 		}
 		
 	}
+
 	// Display de la vie
 	std::cout << H.health << H.max_health;
 

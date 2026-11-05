@@ -17,6 +17,11 @@ enum E_CellType
 	CellType_Count
 };
 
+struct CellInfo {
+	char symbol;
+	bool isWalkable;
+};
+
 const CellInfo g_cellInfos[E_CellType::CellType_Count] =
 {
 	{ '.', true },
@@ -25,17 +30,6 @@ const CellInfo g_cellInfos[E_CellType::CellType_Count] =
 	{ 'E', true },
 };
 
-struct Map {
-	int* cells;
-	int  width;
-	int  height;
-
-	std::vector<Vector2> characterSpawns;
-};
-struct CellInfo {
-	char symbol;
-	bool isWalkable;
-};
 
 class Map
 {
@@ -51,3 +45,6 @@ public:
 private:
 
 };
+
+
+int oneDToTwoD(Vector2 pos, int width);
