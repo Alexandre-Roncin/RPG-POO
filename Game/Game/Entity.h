@@ -42,8 +42,7 @@ public:
 	bool isAlive() const;
 	void applyDamage(int damage);
 
-	bool characterMoveCollision(Entity& character,
-								Vector2& newPos,
+	bool characterMoveCollision(Vector2& newPos,
 								Entity& others);
 
 	virtual void onCollision(Entity& other);

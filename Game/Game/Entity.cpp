@@ -92,13 +92,16 @@ void Entity::applyDamage(int damage)
 	setHealth(health - damage);
 }
 
-bool Entity::characterMoveCollision(
-	Entity& character, Vector2& newPos,
-	Entity& others)
+bool Entity::characterMoveCollision(Vector2& newPos,
+									Entity& others)
 {
-	// Fonction en attente de Map::getCellInfo(Vector2& pos)
-	//if(newPos)
-	return false;
+	if (!CELLINFO::Map::oneDToTwoD(newPos).isWalkable) 
+	{
+		return false;
+	}
+	for (int i; i > )
+	
+	return true;
 }
 
 void Entity::onCollision(Entity& other)

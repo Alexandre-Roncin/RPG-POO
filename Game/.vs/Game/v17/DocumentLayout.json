@@ -11,24 +11,36 @@
       "RelativeMoniker": "D:0:0:{E2BAA751-2724-4874-8FDD-7DC417CA67D2}|Game\\Game.vcxproj|solutionrelative:Game\\Entity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E2BAA751-2724-4874-8FDD-7DC417CA67D2}|Game\\Game.vcxproj|C:\\Users\\aroncin\\Documents\\Projets\\Projet 2\\RPG-POO\\Game\\Game\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E2BAA751-2724-4874-8FDD-7DC417CA67D2}|Game\\Game.vcxproj|solutionrelative:Game\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2BAA751-2724-4874-8FDD-7DC417CA67D2}|Game\\Game.vcxproj|C:\\Users\\aroncin\\Documents\\Projets\\Projet 2\\RPG-POO\\Game\\Game\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E2BAA751-2724-4874-8FDD-7DC417CA67D2}|Game\\Game.vcxproj|solutionrelative:Game\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E2BAA751-2724-4874-8FDD-7DC417CA67D2}|Game\\Game.vcxproj|C:\\Users\\aroncin\\Documents\\Projets\\Projet 2\\RPG-POO\\Game\\Game\\Utilities.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E2BAA751-2724-4874-8FDD-7DC417CA67D2}|Game\\Game.vcxproj|solutionrelative:Game\\Utilities.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2BAA751-2724-4874-8FDD-7DC417CA67D2}|Game\\Game.vcxproj|C:\\Users\\aroncin\\Documents\\Projets\\Projet 2\\RPG-POO\\Game\\Game\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E2BAA751-2724-4874-8FDD-7DC417CA67D2}|Game\\Game.vcxproj|solutionrelative:Game\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E2BAA751-2724-4874-8FDD-7DC417CA67D2}|Game\\Game.vcxproj|C:\\Users\\aroncin\\Documents\\Projets\\Projet 2\\RPG-POO\\Game\\Game\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E2BAA751-2724-4874-8FDD-7DC417CA67D2}|Game\\Game.vcxproj|solutionrelative:Game\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2BAA751-2724-4874-8FDD-7DC417CA67D2}|Game\\Game.vcxproj|C:\\Users\\aroncin\\Documents\\Projets\\Projet 2\\RPG-POO\\Game\\Game\\Mage.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E2BAA751-2724-4874-8FDD-7DC417CA67D2}|Game\\Game.vcxproj|solutionrelative:Game\\Mage.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{E2BAA751-2724-4874-8FDD-7DC417CA67D2}|Game\\Game.vcxproj|C:\\Users\\aroncin\\Documents\\Projets\\Projet 2\\RPG-POO\\Game\\Game\\Warrior.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E2BAA751-2724-4874-8FDD-7DC417CA67D2}|Game\\Game.vcxproj|solutionrelative:Game\\Warrior.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E2BAA751-2724-4874-8FDD-7DC417CA67D2}|Game\\Game.vcxproj|C:\\Users\\aroncin\\Documents\\Projets\\Projet 2\\RPG-POO\\Game\\Game\\WarriorMage.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E2BAA751-2724-4874-8FDD-7DC417CA67D2}|Game\\Game.vcxproj|solutionrelative:Game\\WarriorMage.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2BAA751-2724-4874-8FDD-7DC417CA67D2}|Game\\Game.vcxproj|C:\\Users\\aroncin\\Documents\\Projets\\Projet 2\\RPG-POO\\Game\\Game\\Warrior.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E2BAA751-2724-4874-8FDD-7DC417CA67D2}|Game\\Game.vcxproj|solutionrelative:Game\\Warrior.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{E2BAA751-2724-4874-8FDD-7DC417CA67D2}|Game\\Game.vcxproj|C:\\Users\\aroncin\\Documents\\Projets\\Projet 2\\RPG-POO\\Game\\Game\\Mage.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E2BAA751-2724-4874-8FDD-7DC417CA67D2}|Game\\Game.vcxproj|solutionrelative:Game\\Mage.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,8 +50,22 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Entity.h",
+              "DocumentMoniker": "C:\\Users\\aroncin\\Documents\\Projets\\Projet 2\\RPG-POO\\Game\\Game\\Entity.h",
+              "RelativeDocumentMoniker": "Game\\Entity.h",
+              "ToolTip": "C:\\Users\\aroncin\\Documents\\Projets\\Projet 2\\RPG-POO\\Game\\Game\\Entity.h",
+              "RelativeToolTip": "Game\\Entity.h",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAACAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-10-30T14:06:14.721Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -48,14 +74,51 @@
               "RelativeDocumentMoniker": "Game\\Entity.cpp",
               "ToolTip": "C:\\Users\\aroncin\\Documents\\Projets\\Projet 2\\RPG-POO\\Game\\Game\\Entity.cpp",
               "RelativeToolTip": "Game\\Entity.cpp",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAiwF8AAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAAwGUAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-11-04T12:47:51.906Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Enemy.cpp",
+              "DocumentMoniker": "C:\\Users\\aroncin\\Documents\\Projets\\Projet 2\\RPG-POO\\Game\\Game\\Enemy.cpp",
+              "RelativeDocumentMoniker": "Game\\Enemy.cpp",
+              "ToolTip": "C:\\Users\\aroncin\\Documents\\Projets\\Projet 2\\RPG-POO\\Game\\Game\\Enemy.cpp",
+              "RelativeToolTip": "Game\\Enemy.cpp",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-11-06T12:28:45.061Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Enemy.h",
+              "DocumentMoniker": "C:\\Users\\aroncin\\Documents\\Projets\\Projet 2\\RPG-POO\\Game\\Game\\Enemy.h",
+              "RelativeDocumentMoniker": "Game\\Enemy.h",
+              "ToolTip": "C:\\Users\\aroncin\\Documents\\Projets\\Projet 2\\RPG-POO\\Game\\Game\\Enemy.h",
+              "RelativeToolTip": "Game\\Enemy.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-11-06T12:20:44.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Player.cpp",
+              "DocumentMoniker": "C:\\Users\\aroncin\\Documents\\Projets\\Projet 2\\RPG-POO\\Game\\Game\\Player.cpp",
+              "RelativeDocumentMoniker": "Game\\Player.cpp",
+              "ToolTip": "C:\\Users\\aroncin\\Documents\\Projets\\Projet 2\\RPG-POO\\Game\\Game\\Player.cpp",
+              "RelativeToolTip": "Game\\Player.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-11-06T11:50:12.742Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Utilities.h",
               "DocumentMoniker": "C:\\Users\\aroncin\\Documents\\Projets\\Projet 2\\RPG-POO\\Game\\Game\\Utilities.h",
               "RelativeDocumentMoniker": "Game\\Utilities.h",
@@ -67,7 +130,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "WarriorMage.h",
               "DocumentMoniker": "C:\\Users\\aroncin\\Documents\\Projets\\Projet 2\\RPG-POO\\Game\\Game\\WarriorMage.h",
               "RelativeDocumentMoniker": "Game\\WarriorMage.h",
@@ -79,19 +142,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Warrior.h",
               "DocumentMoniker": "C:\\Users\\aroncin\\Documents\\Projets\\Projet 2\\RPG-POO\\Game\\Game\\Warrior.h",
               "RelativeDocumentMoniker": "Game\\Warrior.h",
               "ToolTip": "C:\\Users\\aroncin\\Documents\\Projets\\Projet 2\\RPG-POO\\Game\\Game\\Warrior.h",
               "RelativeToolTip": "Game\\Warrior.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-10-30T14:14:08.407Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "Mage.h",
               "DocumentMoniker": "C:\\Users\\aroncin\\Documents\\Projets\\Projet 2\\RPG-POO\\Game\\Game\\Mage.h",
               "RelativeDocumentMoniker": "Game\\Mage.h",
@@ -103,28 +166,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Player.h",
               "DocumentMoniker": "C:\\Users\\aroncin\\Documents\\Projets\\Projet 2\\RPG-POO\\Game\\Game\\Player.h",
               "RelativeDocumentMoniker": "Game\\Player.h",
               "ToolTip": "C:\\Users\\aroncin\\Documents\\Projets\\Projet 2\\RPG-POO\\Game\\Game\\Player.h",
               "RelativeToolTip": "Game\\Player.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-10-30T14:11:30.242Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Entity.h",
-              "DocumentMoniker": "C:\\Users\\aroncin\\Documents\\Projets\\Projet 2\\RPG-POO\\Game\\Game\\Entity.h",
-              "RelativeDocumentMoniker": "Game\\Entity.h",
-              "ToolTip": "C:\\Users\\aroncin\\Documents\\Projets\\Projet 2\\RPG-POO\\Game\\Game\\Entity.h",
-              "RelativeToolTip": "Game\\Entity.h",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAACoAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-10-30T14:06:14.721Z",
-              "EditorCaption": ""
             }
           ]
         }
