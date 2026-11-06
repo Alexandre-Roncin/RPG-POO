@@ -20,8 +20,6 @@ E_EnemyAction Enemy::getRandomInput()
 	case 3:
 		return E_EnemyAction::Move_Right;
 
-		//temporairement ici, vas etre move dans mage
-
 	default:
 		return E_EnemyAction::None;
 	}
