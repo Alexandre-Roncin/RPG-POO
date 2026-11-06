@@ -1,17 +1,24 @@
+// Made by Cyril Rada
 #include "Map.h"
 
-
-const int width = 20;
-const int height = 10;
-
-// Converts a 1 dimensional array into a more understandable 2D vector
-int oneDToTwoD(Vector2 pos, int width)
+int Map::getHeight() const
 {
-	return pos.y * width + pos.x;
+	return HEIGHT;
 }
 
+int Map::getWidth() const
+{
+	return WIDTH;
+}
+
+// Converts a 1 dimensional array into a more understandable 2D vector
+int Map::oneDToTwoD(Vector2 pos, int width)
+{
+	return pos.y * width + pos.x;
+} 
+
 // Fairly self-explanatory, it renders the terrain's ground and various obstacles as well as the exit
-void RenderTerrain(int cellType)
+void Map::RenderTerrain(int cellType)
 {
 	switch (cellType) {
 	case Ground:
@@ -30,7 +37,7 @@ void RenderTerrain(int cellType)
 }
 
 // Again, self-explanatory, renders the entities' icons according to their positions
-bool RenderEntity(int x, int y, std::vector<Entity>& entities)
+bool Map::RenderEntity(int x, int y, std::vector<Entity>& entities)
 {
 	for (Entity& entity : entities) {
 		if (x == entity.getPos().x && y == entity.getPos().y) {
@@ -42,7 +49,7 @@ bool RenderEntity(int x, int y, std::vector<Entity>& entities)
 }
 
 // renders the cells of the map, naturally excluding the entities
-void RenderCell(int x, int y, int cellType, std::vector<Entity>& entities)
+void Map::RenderCell(int x, int y, int cellType, std::vector<Entity>& entities)
 {
 	if (!RenderEntity(x, y, entities)) {
 		RenderTerrain(cellType);
@@ -50,7 +57,7 @@ void RenderCell(int x, int y, int cellType, std::vector<Entity>& entities)
 }
 
 // loads the map with thehelp of the previous function
-void LoadLevel(int map_size_x, int map_size_y, std::vector<Entity>& entities, int* p)
+void Map::LoadLevel(int map_size_x, int map_size_y, std::vector<Entity>& entities, int* p)
 {
 	for (int y = 0; y < map_size_y; y++) {
 		for (int x = 0; x < map_size_x; x++) {
@@ -61,6 +68,11 @@ void LoadLevel(int map_size_x, int map_size_y, std::vector<Entity>& entities, in
 	}
 
 	if (!entities.empty()) {
-		std::cout << "Health : " << entities[0].getHealth() << " / " << entities[0].getMaxHealth() << '\n';		// the number 0 is chosen to get the health of the first entity, therefore the player's
+		std::cout	<< "Health : "
+					// the number 0 is chosen to get the health of the first entity, therefore the player's
+					<< entities[0].getHealth() 
+					<< " / " 
+					<< entities[0].getMaxHealth() 
+					<< '\n';
 	}
 }
