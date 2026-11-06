@@ -1,5 +1,6 @@
 // Alexandre RONCIN
 #include "Entity.h"
+#include "Map.h"
 
 Entity::Entity()
 {
@@ -71,8 +72,8 @@ void Entity::setIcon(char newIcon)
 
 void Entity::setPos(const Vector2& newPos)
 {
-	pos = newPos;
-	// rajouter une gestion du out of bounds quand la partie map est finie
+	pos.x = newPos.x % getWidth();
+	pos.y = newPos.y % getHeight();
 }
 
 
@@ -95,7 +96,8 @@ bool Entity::characterMoveCollision(
 	Entity& character, Vector2& newPos,
 	Entity& others)
 {
-	// A completer plus tard
+	// Fonction en attente de Map::getCellInfo(Vector2& pos)
+	//if(newPos)
 	return false;
 }
 
