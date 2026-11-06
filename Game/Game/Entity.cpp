@@ -4,8 +4,8 @@
 Entity::Entity()
 {
 	pos = { 0, 0 };
-	health = 100;
-	maxHealth = 100;
+	health = 10;
+	maxHealth = 10;
 	damage = 10;
 	icon = '?';
 }

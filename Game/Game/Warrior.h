@@ -1,5 +1,6 @@
 // Alexandre RONCIN
 #pragma once
+#include "Player.h"
 
 class Warrior: public Player
 {
@@ -8,7 +9,7 @@ public:
 	{
 	}
 
-	void onUpdate() override;
+	void onUpdate();
 
 	~Warrior()
 	{

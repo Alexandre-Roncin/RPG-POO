@@ -47,7 +47,6 @@ public:
 								Entity& others);
 
 	virtual void onCollision(Entity& other);
-
 	virtual void onUpdate();
 
 	virtual ~Entity() = default;
@@ -58,5 +57,4 @@ protected:
 	int maxHealth;
 	int damage;
 	char icon;
-
 };
