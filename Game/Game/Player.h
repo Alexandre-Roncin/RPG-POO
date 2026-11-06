@@ -1,5 +1,6 @@
 // Alexandre RONCIN
 #pragma once
+#include "Entity.h"
 
 enum E_PlayerAction
 {
@@ -11,21 +12,14 @@ enum E_PlayerAction
 	Attack
 };
 
-class Player
+
+class Player : public Entity
 {
 public:
-	Player()
-	{
-	}
+	Player();
 
-	int readPlayerInputs();
-	Vector2 getDirection(int);
-	virtual void onUpdate();
-
-	~Player()
-	{
-	}
-
-private:
+	E_PlayerAction getPlayerInput();
+	Vector2 getDirection(E_PlayerAction action);
 
 };
+
