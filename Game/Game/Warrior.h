@@ -1,19 +1,19 @@
+// Alexandre RONCIN
 #pragma once
 #include "Player.h"
 
-class Warrior: public Player
+class Warrior : public Player
 {
 public:
-	Warrior()
-	{
-	}
+    Warrior()
+    {
+    }
 
-	void onCollision() override;
-	void onUpdate() override;
+    void onUpdate();
 
-	~Warrior()
-	{
-	}
+    ~Warrior()
+    {
+    }
 
 private:
 

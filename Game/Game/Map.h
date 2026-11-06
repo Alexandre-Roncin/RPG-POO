@@ -40,8 +40,13 @@ public:
 	{
 	}
 
+	std::vector<int> getMap();
+	int getTile(Vector2& pos, int width);
 	int getWidth() const;
 	int getHeight() const;
+	E_CellType getCellType(Vector2& pos, int width);
+
+	void setMap(const std::vector<int>& map);
 
 	int oneDToTwoD(Vector2 pos, int width);
 	void RenderTerrain(int cellType);
@@ -55,8 +60,8 @@ public:
 	}
 
 private:
-	const int WIDTH = 20;
-	const int HEIGHT = 10;
-
+	int width = 20;
+	int height = 10;
+	std::vector<int> map{};
 };
 

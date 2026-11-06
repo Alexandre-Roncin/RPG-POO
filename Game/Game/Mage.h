@@ -1,21 +1,21 @@
+// Alexandre RONCIN
 #pragma once
-#include "Player.h"
 
-class Mage: public Player
+class Mage : public Player
 {
 public:
-	Mage()
-	{
-	}
+    Mage()
+    {
+    }
 
-	void onCollision() override;
-	void onUpdate() override;
+    void onCollision() override;
+    void onUpdate() override;
 
-	void castSpell();
+    void castSpell();
 
-	~Mage()
-	{
-	}
+    ~Mage()
+    {
+    }
 
 private:
 

@@ -3,12 +3,44 @@
 
 int Map::getHeight() const
 {
-	return HEIGHT;
+	return height;
 }
 
 int Map::getWidth() const
 {
-	return WIDTH;
+	return width;
+}
+
+std::vector<int> Map::getMap() 
+{
+	return map;
+}
+
+int Map::getTile(Vector2& pos, int width) 
+{
+	return Map::getMap()[Map::oneDToTwoD(pos, width)];
+}
+
+void Map::setMap(const std::vector<int>& newMap)
+{
+	if (newMap.size() == Map::getHeight() * Map::getWidth());
+}
+
+E_CellType Map::getCellType(Vector2& pos, int width) 
+{
+	int tile = getTile(pos, width);
+
+	switch (tile) 
+	{
+	case 0:
+		return E_CellType::Ground;
+	case 1:
+		return E_CellType::Water;
+	case 2:
+		return E_CellType::Mountain;
+	case 3:
+		return E_CellType::Exit;
+	}
 }
 
 // Converts a 1 dimensional array into a more understandable 2D vector

@@ -1,52 +1,59 @@
+// Alexandre RONCIN
 #pragma once
+
 #include "Utilities.h"
+#include <vector>
 
 enum E_PlayerAction
 {
-	None = 0,
-	Move_Up,
-	Move_Down,
-	Move_Left,
-	Move_Right,
-	Attack
+    None = 0,
+    Move_Up,
+    Move_Down,
+    Move_Left,
+    Move_Right,
+    Attack
 };
 
 static const Vector2 g_directions[4] = {
-	{0,-1},  // Up
-	{0, 1},  // Down
-	{-1, 0}, // Left
-	{1, 0}   // Right
+    {0,-1},  // Up
+    {0, 1},  // Down
+    {-1, 0}, // Left
+    {1, 0}   // Right
 };
-
-
-
-
 
 class Entity
 {
 public:
-	Entity()
-	{
-	}
+    Entity()
+    {
+    }
 
-	int GetHealth();
-	void SetHealth();
+    int getHealth() const;
+    int getMaxHealth() const;
+    int getDamage() const;
+    char getIcon() const;
+    Vector2 getPos() const;
 
-	char GetIcon();
-	void SetIcon();
+    void setHealth(int newHealth);
+    void setDamage(int newDamage);
+    void setIcon(char newIcon);
+    void setPos(const Vector2& newPos);
 
-	virtual void onCollision();
-	void applyDamage();
-	bool isAlive();
-	void move();
-	virtual void onUpdate();
+    bool isAlive() const;
+    void applyDamage(int damage);
 
-	~Entity()
-	{
-	}
+    bool characterMoveCollision(Vector2& newPos,
+        Entity& others);
 
-private:
-	int health = 1;
-	int maxHealth = 10;
-	char icon = 'O';
+    virtual void onCollision(Entity& other);
+    virtual void onUpdate();
+
+    virtual ~Entity() = default;
+
+protected:
+    Vector2 pos;
+    int health;
+    int maxHealth;
+    int damage;
+    char icon;
 };
