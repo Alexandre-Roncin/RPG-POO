@@ -72,8 +72,8 @@ void Entity::setIcon(char newIcon)
 
 void Entity::setPos(const Vector2& newPos)
 {
-	pos.x = newPos.x % getWidth();
-	pos.y = newPos.y % getHeight();
+	pos.x = newPos.x % Map::getWidth();
+	pos.y = newPos.y % Map::getHeight();
 }
 
 
@@ -95,7 +95,8 @@ void Entity::applyDamage(int damage)
 bool Entity::characterMoveCollision(Vector2& newPos,
 									Entity& others)
 {
-	if (!CELLINFO::Map::oneDToTwoD(newPos).isWalkable) 
+	// Obviously doesn't work, waiting for a function on Cyril's side
+	if (!CELLINFO::Map::oneDToTwoD(newPos).isWalkable)
 	{
 		return false;
 	}

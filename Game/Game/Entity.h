@@ -28,23 +28,31 @@ public:
 	{
 	}
 
+	// Getters
 	int getHealth() const;
 	int getMaxHealth() const;
 	int getDamage() const;
 	char getIcon() const;
 	Vector2 getPos() const;
 
+	// Setters
 	void setHealth(int newHealth);
 	void setDamage(int newDamage);
 	void setIcon(char newIcon);
 	void setPos(const Vector2& newPos);
 
+	// Checks if the entity is still alive
 	bool isAlive() const;
+	// Subtracts a specific amount of health
 	void applyDamage(int damage);
 
+	// Checks if the entity can move to a specific tile
+	// Returns true only if no wall / other entity is located here
 	bool characterMoveCollision(Vector2& newPos,
 								Entity& others);
 
+	// Deals with what happens when an entity collides with another entity
+	// Will be overriden in children classes
 	virtual void onCollision(Entity& other);
 	virtual void onUpdate();
 
