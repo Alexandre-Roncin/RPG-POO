@@ -1,7 +1,6 @@
 //Alexandre Roncin
 #include "Enemy.h"
 
-
 E_EnemyAction Enemy::getRandomInput()
 {
 	int input = rand() % 4;
