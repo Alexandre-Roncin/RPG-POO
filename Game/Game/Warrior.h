@@ -1,16 +1,14 @@
+// Alexandre RONCIN
 #pragma once
+#include "Player.h"
 
-class Warrior
+// More hp and deals more contact damage
+class Warrior : public virtual Player
 {
 public:
-	Warrior()
-	{
-	}
+    Warrior();
 
-	~Warrior()
-	{
-	}
+    void onUpdate() override;
 
-private:
-
+    ~Warrior() = default;
 };

@@ -1,17 +1,12 @@
+//Alexandre RONCIN
 #pragma once
+#include "Enemy.h"
 
-class HeadlessZombie
+// Moves randomly
+class HeadlessZombie : public virtual Enemy
 {
 public:
-	HeadlessZombie()
-	{
-	}
+    HeadlessZombie();
 
-	~HeadlessZombie()
-	{
-	}
-
-private:
-
+    ~HeadlessZombie() override = default;
 };
-

@@ -1,16 +1,16 @@
+// Alexandre RONCIN
 #pragma once
+#include "Warrior.h"
+#include "Mage.h"
 
-class WarriorMage
+class WarriorMage : public Warrior, public Mage
 {
 public:
-	WarriorMage()
-	{
-	}
+    WarriorMage();
 
-	~WarriorMage()
-	{
-	}
+    // Both parents override these, so they must be overridden here
+    void onCollision(Entity& other) override;
+    void onUpdate() override;
 
-private:
-
+    ~WarriorMage() = default;
 };

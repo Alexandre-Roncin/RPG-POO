@@ -1,16 +1,14 @@
+// Alexandre RONCIN
 #pragma once
+#include "Enemy.h"
 
-class Zombie
+class Zombie : public virtual Enemy
 {
 public:
-	Zombie()
-	{
-	}
+    Zombie();
 
-	~Zombie()
-	{
-	}
+    // Uses some sort of pathfinding to chase the player
+    E_EnemyAction chooseAction(const Vector2& targetPos) override;
 
-private:
-
+    ~Zombie() override = default;
 };

@@ -1,16 +1,14 @@
+// Alexandre RONCIN
 #pragma once
+#include "Entity.h"
 
-class Swimmer
+// Entities inheriting this class can walk on water
+class Swimmer : public virtual Entity
 {
 public:
-	Swimmer()
-	{
-	}
+    Swimmer() = default;
 
-	~Swimmer()
-	{
-	}
+    bool canSwim() const override;
 
-private:
-
+    ~Swimmer() override = default;
 };

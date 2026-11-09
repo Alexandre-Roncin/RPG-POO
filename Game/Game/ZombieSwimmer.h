@@ -1,16 +1,13 @@
+// Alexandre RONCIN
 #pragma once
+#include "Zombie.h"
+#include "Swimmer.h"
 
-class ZombieSwimmer
+// A Zombie that can walk on water
+class ZombieSwimmer : public Zombie, public Swimmer
 {
 public:
-	ZombieSwimmer()
-	{
-	}
+    ZombieSwimmer();
 
-	~ZombieSwimmer()
-	{
-	}
-
-private:
-
-};
+    ~ZombieSwimmer() override = default;
+};  
